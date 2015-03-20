@@ -7,14 +7,35 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <!-- your scripts -->
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/events.js"></script>
   </head>
   <body>
     <div id="main">
-      <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
+      <h1>Chatterbox</h1>
+        <div id="rooms">
+          Room:
+          <select id="roomSelect">
+          </select>
+        </div>
+        <form id="send">
+          <p>Room name</p>
+          <input type="text" name="message" id="roomname"/>
+          <p>Message</p>
+          <input type="text" name="message" id="message"/>
+        </form>
+      <div id="chats"></div>
+      <script>
+        $(function(){
+
+          app.init();
+        });
+      </script>
     </div>
   </body>
 </html>
+
+

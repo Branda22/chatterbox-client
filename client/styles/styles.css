@@ -82,3 +82,15 @@ form input[type=text] {
 .spinner img {
     padding: 10px;
 }
+
+#chats{
+    width: 95%;
+    background-color: #c5c5c5;
+    padding: 15px;
+}
+.message{
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+}
+
