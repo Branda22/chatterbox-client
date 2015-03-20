@@ -94,3 +94,9 @@ form input[type=text] {
     margin: 10px;
 }
 
+#chatName {
+    background-color: white;
+    padding: 15px;
+    margin: auto;    
+}
+

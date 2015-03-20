@@ -15,8 +15,8 @@ $(document).ready(function(){
 
 	$("select").change(function(event){
 		app.room = $(this).val();
+		$("#chatName").text(app.room);
 		$("#chats").children().remove();
-		//clearInterval(app.intervalID);
 		app.fetch();
 	});
 
